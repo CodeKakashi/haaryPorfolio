@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" light-mode="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
   -->
 
     <link id="favicon" rel="icon" href="./assets/images/happy.png" />
+    <link rel="stylesheet" href="mouse.css" />
 
     <script defer src="./faviconChange.js"></script>
 
@@ -30,11 +31,11 @@
     />
   </head>
 
-  <button class="mode-toggle" onclick="toggleMode()">
-    Switch to Dark Mode
-  </button>
-
   <body>
+    <div class="cursor-sun"></div>
+    <div class="cursor-sun-outline"></div>
+    <script src="mouse.js"></script>
+
     <!--
     - #MAIN
     
@@ -143,7 +144,7 @@
               </div>
             </li>
 
-            <li class="contact-item">
+            <!-- <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
@@ -153,7 +154,7 @@
 
                 <time datetime="1982-06-23">April 12, 2000</time>
               </div>
-            </li>
+            </li> -->
 
             <li class="contact-item">
               <div class="icon-box">

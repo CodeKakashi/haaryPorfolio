@@ -1,10 +1,10 @@
 // Initialize EmailJS (Make sure you replace 'DvT7cN-TF7M6xiLvV' with your actual user ID from EmailJS)
 (function () {
-  if (typeof emailjs === "undefined") {
-    console.log("EmailJS library is not loaded.");
-  } else {
-    // emailjs.init("DvT7cN-TF7M6xiLvV");
-  }
+  // if (typeof emailjs === "undefined") {
+  //   console.log("EmailJS library is not loaded.");
+  // } else {
+  emailjs.init("DvT7cN-TF7M6xiLvV");
+  // }
 })();
 
 // Function to handle form submission
