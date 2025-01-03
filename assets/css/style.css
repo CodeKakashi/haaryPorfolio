@@ -800,9 +800,13 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
+  width: 130px; /* Set a uniform width */
+  height: 130px; /* Set a uniform height */
+  object-fit: contain; /* Ensures the image fits within the dimensions while maintaining aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image within the list item */
 }
 
 .clients-item img:hover {
