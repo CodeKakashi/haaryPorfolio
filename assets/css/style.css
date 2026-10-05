@@ -1650,6 +1650,28 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 25px;
   }
 
+  .skills-chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .skill-chip {
+    background: var(--onyx);
+    color: var(--light-gray);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 1px solid var(--jet);
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-1);
+  }
+
+  .skill-chip:hover {
+    color: var(--orange-yellow-crayola);
+  }
+
   /**
    * #PORTFOLIO, BLOG
    */
@@ -1853,11 +1875,13 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    position: absolute;
+    position: sticky;
     bottom: auto;
     top: 0;
     left: auto;
     right: 0;
+    z-index: 10;
+    margin-left: auto;
     width: max-content;
     border-radius: 0 20px;
     padding: 0 20px;
@@ -2048,5 +2072,15 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+}
+
+/**
+ * pointer optimizations
+ */
+
+@media (pointer: coarse) {
+  .cursor-sun, .cursor-sun-outline {
+    display: none !important;
   }
 }
